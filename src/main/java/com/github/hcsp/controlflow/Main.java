@@ -3,7 +3,7 @@ package com.github.hcsp.controlflow;
 public class Main {
     public static void main(String[] args) {
         System.out.println(factorial(0));
-        System.out.println(factorial(1));
+        System.out.println(factorial(-1));
         System.out.println(factorial(2));
         System.out.println(factorial(5));
     }
@@ -14,5 +14,16 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+        int count = 1;
+//        if (n < 0) {
+//            System.out.print("请输入一个正整数");
+//            return  ;
+//        } else {
+            for (int i = 1; i <= n; i++) {
+                count *= i;
+            }
+//        }
+        return count;
+    }
 }
