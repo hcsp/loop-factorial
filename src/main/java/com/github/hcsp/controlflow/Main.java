@@ -14,5 +14,19 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+//        啊，写完才发现题目要求用循环写
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        } else {
+//            return n * Main.factorial(n - 1);
+//        }
+        int result = 1;
+        if (!(n == 0 || n == 1)) {
+            for (int i = n; i >= 2; i--) {
+                result *= i;
+            }
+        }
+        return result;
+    }
 }
