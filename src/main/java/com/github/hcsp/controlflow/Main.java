@@ -16,7 +16,7 @@ public class Main {
      */
     public static int factorial(int n) {
         int a = 1;
-        if(a > 0 && a <= 2) {
+        if(n > 0 && n <= 2) {
             a = n;
         }else {
             for(int i = n; i > 1; i --) {
