@@ -14,5 +14,19 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
-}
+    public static int factorial(int n) {
+        // 3! = 3 * 2 ;
+        // 2! = 2 ;
+        // 5! = 5 * 4 * 3 * 2 ;
+        int result = 1;
+        if (n == 0 || n == 1) {
+            return result;
+        } else {
+            int i= 1;
+            while(i <= n){
+                result = result * i;
+                i++;
+            }
+        }return result;
+        }
+    }
