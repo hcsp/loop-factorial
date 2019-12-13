@@ -14,5 +14,11 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+        int s=n;
+        for(int j=n-1;j>=1;j--){
+            s=s*j;
+        }
+        return s;
+    }
 }
