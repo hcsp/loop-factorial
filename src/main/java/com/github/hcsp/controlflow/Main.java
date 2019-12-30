@@ -15,15 +15,15 @@ public class Main {
      * @return 该数字的阶乘
      */
     public static int factorial(int n) {
+        /*
+            OK，看了其中一位优秀的同学，他没有单独处理0的阶乘
+            而是用了倒序循环（万万没想到，还有这种骚操作），巧妙的处理了
+            学习了学习了！
+         */
         int sum= 1;
-
-        if (n == 0)
-            return 1;
-
-        while(n>0){
-            sum *=n--;
+        for (int i = n; i > 0; i--) {
+            sum *= i;
         }
-
         return sum;
     }
 }
