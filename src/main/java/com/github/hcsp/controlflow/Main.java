@@ -14,5 +14,28 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+//        int result = 1;
+//        // 递归也可以
+//        if (n == 0) {
+//            return 1;
+//        } else {
+//            for (int i = 1; i <= n; i++) {
+//                result *= i;
+//            }
+//        }
+//        return result;
+
+        return jiecheng(n);
+
+
+    }
+
+    public static int jiecheng(int s) {
+        if (s == 0) {
+            return 1;
+        } else {
+            return s * jiecheng(s - 1);
+        }
+    }
 }
