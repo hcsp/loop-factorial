@@ -16,9 +16,11 @@ public class Main {
      */
     public static int factorial(int n) {
         int factor = 1;
+
         for (int i = 1; i < n + 1; i++) {
             factor *= i;
         }
+
         return n != 0 ? factor : 0;
     }
 }
