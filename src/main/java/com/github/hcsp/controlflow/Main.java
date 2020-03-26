@@ -14,5 +14,19 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+                if (n < 0) {
+            System.out.println("请输入正整数");
+            return -1;
+        }
+        if (n == 0) return 1;
+        if (n > 12) {
+            System.out.println("数据溢出");
+            return -1;
+        }
+        int answer = 1;
+        for (int i = 1; i <= n; i++) {
+            answer = answer * i;
+        }
+        return answer;
 }
