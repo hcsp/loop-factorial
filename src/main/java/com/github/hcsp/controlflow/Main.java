@@ -15,11 +15,11 @@ public class Main {
      * @return 该数字的阶乘
      */
     public static int factorial(int n) {
-        if(n == 0){
+        if (n == 0) {
             return 1;
-        }else {
+        } else {
             int count = 1;
-            for (int i = 1; i < n+1 ; i++) {
+            for (int i = 1; i < n + 1; i++) {
                 count *= i;
             }
             return count;
