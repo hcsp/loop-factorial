@@ -1,5 +1,9 @@
 package com.github.hcsp.controlflow;
 
+import javafx.beans.property.adapter.JavaBeanIntegerPropertyBuilder;
+
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(factorial(0));
@@ -14,5 +18,20 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+        if (n >= 0) {
+            int result = 1;
+            for (int i = n; i > 0; i--) {
+                result *= i;
+            }
+            return result;
+        } else {
+            int result = 1;
+            while (n < 0) {
+                result *= n;
+                n++;
+            }
+            return result;
+        }
+    }
 }
