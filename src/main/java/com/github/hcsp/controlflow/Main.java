@@ -15,7 +15,7 @@ public class Main {
      * @return 该数字的阶乘
      */
     public static int factorial(int n) {
-        if (n == 0) return 0;
+        if (n == 0) return 1;
         int result = 1;
         while (n >= 1) {
             result *= n;
