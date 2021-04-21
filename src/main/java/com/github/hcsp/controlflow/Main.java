@@ -14,5 +14,15 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+        int f = 1;
+        if (n < 0) {
+            System.out.println("负数没有阶乘");
+            return 0;
+        }
+        for (int i = 1; i < n + 1; i++) {
+            f *= i;
+        }
+        return f;
+    }
 }
