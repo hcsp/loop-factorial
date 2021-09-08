@@ -14,5 +14,15 @@ public class Main {
      * @param n 输入数字
      * @return 该数字的阶乘
      */
-    public static int factorial(int n) {}
+    public static int factorial(int n) {
+        int m = 1;
+        if (n == 0) {
+            return 1;
+        } else {
+            for (int i = 0; i < n; i++) {
+                m *= (n - i);
+            }
+        }
+        return m;
+    }
 }
