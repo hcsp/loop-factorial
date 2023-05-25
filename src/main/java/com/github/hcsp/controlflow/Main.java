@@ -16,8 +16,7 @@ public class Main {
      */
     public static int factorial(int n) {
         int value = n;
-        for (int i = 1; i<n; i++)
-        {
+        for (int i = 1; i<n; i++) {
             value= value*i;
         }
         return value;
