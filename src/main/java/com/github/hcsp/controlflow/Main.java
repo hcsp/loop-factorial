@@ -5,7 +5,7 @@ public class Main {
         System.out.println(factorial(0));
         System.out.println(factorial(1));
         System.out.println(factorial(2));
-        System.out.println(factorial(5));
+        System.out.println(factorial(7));
     }
 
     /**
@@ -15,9 +15,10 @@ public class Main {
      * @return 该数字的阶乘
      */
     public static int factorial(int n) {
-        int value = n;
+        int value;
+        value = (n == 0) ? 1 : n;
         for (int i = 1; i<n; i++) {
-            value= value*i;
+            value= value * i;
         }
         return value;
     }
