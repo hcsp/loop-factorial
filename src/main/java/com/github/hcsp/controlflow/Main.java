@@ -16,10 +16,10 @@ public class Main {
      */
     public static int factorial(int n) {
         int number = 1;
-        if (n == 0||n==1) {
-            return n;
+        if (n == 0) {
+            return 1;
         }
-        while (n>1){
+        while (n > 1) {
             number *= n--;
         }
         return number;
